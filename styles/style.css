@@ -33,4 +33,8 @@ img {
   margin: 0 auto;
 }
 
+h3, .recipe {
+  color: green;
+  font-weight: bold;
+}
 /* Test Comment

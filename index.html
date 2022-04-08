@@ -5,14 +5,31 @@
     <title>My test page</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="icon" href="images/it-user.ico" type="image/x-icon">
   </head>
   <body>
+
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li><a href="pictures.html">Pictures</a></li>
+      <li><a href="videos.html">Videos</a></li>
+    </ul>
+
+    <form>
+      <input type="search" name="q" placeholder="Search query">
+      <input type="submit" value="Go!">
+    </form>
+  </nav>
+
     <h1>Building a Website is fun!</h1>
 
+<main>
+    <article>
     <img src="images/firefox-icon.png" alt="The Mozilla Firefox Icon">
 
     <p>The User Experience team cares about it's users!</p>
-
+    <h2>Team Names</h2>
     <ul>
       <li>Drew Marchingband</li>
       <li>Bryan Blanchedfood</li>
@@ -20,12 +37,55 @@
       <li>Chris Hollandaise</li>
     </ul>
 
-<p>This team puts in a lot of effort to help out the MGB community!</p
+    <p><a href="https://www.example.com/large-report.pdf">
+      Download the sales report (PDF, 10MB)
+    </a></p>
 
-<p>You can learn more about us at <a href="https://www.google.com">Google</a>; We are searchable.</p>
+    <p><a href="https://www.example.com/video-stream/" target="_blank">
+      Watch the video (stream opens in separate tab, HD quality)
+    </a></p>
 
-<button>Change user</button>
+    <p><a href="https://www.example.com/car-game">
+      Play the car game (requires Flash)
+    </a></p>
 
+    <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+       download="firefox-latest-64bit-installer.exe">
+      Download Latest Firefox for Windows (64-bit) (English, US)
+    </a>
+  </article>
+  <br>
+  <article>
+    <h2>Recipes!</h2>
+    <br>
+    <ol class="recipe">
+      <li>Remove the skin from the garlic, and chop coarsely.</li>
+      <li>Remove all the seeds and stalk from the pepper, and chop coarsely.</li>
+      <li>Add all the ingredients into a food processor.</li>
+      <li>Process all the ingredients into a paste.
+        <ul>
+          <li>If you want a coarse "chunky" hummus, process it for a short time.</li>
+          <li>If you want a smooth hummus, process it for a longer time.</li>
+        </ul>
+      </li>
+    </ol>
+
+<h3>Additional Information</h3>
+<p>This team puts in a lot of effort to help out the MGB community!</p>
+
+<p>You can learn more about us at <a href="https://www.google.com" title="Google" target="_blank">Google</a>; We are searchable.</p>
+
+<p>Adding some random text to help with a pull request</p>
+
+  </article>
+    <button>Change user</button>
+
+</main>
+
+<footer>
+  <p>©Copyright 2050 by nobody. All rights reversed.</p>
+</footer>
+<
 <script src="scripts/main.js"></script>
 
   </body>
