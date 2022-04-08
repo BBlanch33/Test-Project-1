@@ -29,6 +29,12 @@ def TextAnalysis(df):
     df.dropna(subset=['FWords'], inplace=True)
     df.drop('Words', inplace=True, axis=1)
 
+    # Clean up stop-word filtered token data (Drop Blanks)
+    df['FWords'].replace('', np.nan, inplace=True)
+    df['FWords'].replace('[^\w\s]','',regex=True)
+    df.dropna(subset=['FWords'], inplace=True)
+    df.drop('Words', inplace=True, axis=1)
+
     #df.to_csv("DHCtokens.csv")
     return df
 
